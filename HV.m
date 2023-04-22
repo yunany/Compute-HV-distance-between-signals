@@ -17,7 +17,11 @@ function [out,options] = HV(f0,f1, kappa,lambda, epsilon,options,init)
 %   nt: time grid size, default to be round(2/3*nx)
 %   niter: total number of iterations in optimization, default as 101
 %   alpha: the initial damping parameter, default as 1 (no damping)
-%   oneside_diff: default 0; if the signals are discontinuous, set 1
+
+%   oneside_diff: By default we use centered differences in f_x, which are
+%   2nd order, but that when discontinuities dominate, it is more stable to 
+%   use a lower order scheme. This option allows by setting it to 1.
+
 %   kmax: maximum number of peaks that are to be matched in prominenece 
 %         matching based initialization; default 5
 %   minmatchKProm: if use prominenece of -f0, -f1 for initialization; 
