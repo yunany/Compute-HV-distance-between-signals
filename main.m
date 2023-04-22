@@ -9,7 +9,7 @@ diary (strcat(str,'/convergence_history.txt'))
 
 %% create an example
 x= 0:2e-3:1; % set up grid for the x domain [0,1]
-f0 = sin(5*x); f1 = sin(6*x+0.2);  % given signals f0, f1
+f0 = sin(5*x); f1 = sin(12*x+0.8);  % given signals f0, f1
 %% set the parameters
 %%% parameters kappa,lambda, epsilon in the action functional
 %   these 3 parameters can be set based on Section 5.1 of the paper

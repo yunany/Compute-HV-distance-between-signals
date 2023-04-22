@@ -19,7 +19,11 @@ Diff_Matrix(2,2) = Diff_Matrix(2,2) - 1/dx^4;
 Diff_Matrix(end-1,end-1) = Diff_Matrix(end-1,end-1) - 1/dx^4;
 
 
-DtF = Dt*f; DtF([1,nt],:) = 0;
+DtF = Dt*f; 
+% the time derivative in DtF is not accurate at nt due to the forward 
+% difference, we use the value at nt-1 instead
+DtF(nt,:) = DtF(nt-1,:); 
+
 if (options.oneside_diff)
     % forward difference (first-order)
     Dx = spdiags([-ones(nx,1), ones(nx,1)],[0 1],nx,nx)/dx;  

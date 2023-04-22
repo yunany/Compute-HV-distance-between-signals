@@ -16,7 +16,7 @@ close all
 % C = 7 corresponds to Example 5.7, Figure 8
 
 %%% load examples
-C = 2;
+C = 7;
 % create a folder for this example
 str = strcat('Example_',num2str(C)); mkdir(str);
 diary (strcat(str,'/convergence_history.txt'))
