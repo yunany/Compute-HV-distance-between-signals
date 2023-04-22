@@ -13,26 +13,17 @@ This repository provides the code and data associated with the paper "HV geometr
 1. Clone this repository:
 
    ```
-   git clone https://github.com/yourusername/hv-geometry.git
+   git clone https://github.com/yunany/Compute-HV-distance-between-signals.git
    ```
 
 ## Usage
 
-The main script to run the experiments is `main.m`.
-
-This script will run several experiments which highlight the nature of the metric. The results of the experiments will be saved in the `results` directory.
+The main script to run the experiments is `main.m` and `main_paper_examples.m`. In `main_paper_examples.m`, we reproduce all the examples in the paper. In `main.m`, shows you how to use the code for more general user-defined signals. 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-We would like to thank the following people for their contributions to this project:
-
-- John Smith
-- Jane Doe
+This project is licensed under the BSD-3 License. 
 
 ## References
 
-- Doe, J., & Smith, J. (2021). HV geometry for signal comparison. *Journal of Signal Processing*, 10(2), 123-135.
+- Ruiyu Han, Dejan Slepvev and Yunan Yang (2023). HV geometry for signal comparison. Preprint
