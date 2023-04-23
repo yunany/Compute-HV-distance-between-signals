@@ -18,7 +18,7 @@ This repository provides the code and data associated with the paper "HV geometr
 
 ## Usage
 
-The main script to run the experiments is `main.m` and `main_paper_examples.m`. In `main_paper_examples.m`, we reproduce all the examples in the paper. In `main.m`, shows you how to use the code for more general user-defined signals. 
+The main script to run the experiments is `main.m` and `main_paper_examples.m`. In `main_paper_examples.m`, we reproduce all the examples in the paper. In `main.m`, we show how to use the code for more general user-defined signals. 
 
 ## License
 
@@ -26,4 +26,4 @@ This project is licensed under the BSD-3 License.
 
 ## References
 
-- Ruiyu Han, Dejan Slepvev and Yunan Yang (2023). HV geometry for signal comparison. Preprint
+- Ruiyu Han, Dejan Slepcev and Yunan Yang (2023). HV geometry for signal comparison. Preprint.
